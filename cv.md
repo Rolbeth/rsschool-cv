@@ -30,7 +30,7 @@
     + Postgresql
 * Php
 * Golang
-* C, C++, Java - lost skills
+* ~~C, C++, Java
 * Limux , Debian, Ubuntu 
 * Apache , Nginx, Caady
 
@@ -52,3 +52,12 @@ func indexpage(c *fiber.Ctx) error {
 	}, "layouts/main")
 }
 ```
+### Education
+* National Research University "Moscow Power Engineering Institute" , Nuclear power engineer
+* Tomsk State University , Web Developer
+* Courses:
+    + Netology , Sql basic (Postgresql)
+
+### Languages:
+* Russian - Native
+* English - A1
