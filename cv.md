@@ -8,14 +8,12 @@
 **Phone:** +7 926 660 0538  
 **E-mail:** x91.2008@gmail.com  
 **Telegram:** @Rolbeth  
-[Тескт ссылки 1](http://ya.ru "Описание 2")  
-[Тескт ссылки 2](http://ya.ru "Описание 2")  
+**Discord:** Evgeniy#7408  
 
 ***
 ### Briefly About Myself:
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
+I want to test myself on RSSchool courses.
 
 ***
 ### Skills and Proficiency:
@@ -30,7 +28,6 @@
     + Postgresql
 * Php
 * Golang
-* ~~C, C++, Java
 * Limux , Debian, Ubuntu 
 * Apache , Nginx, Caady
 
