@@ -5,7 +5,7 @@
 ***
 ### Contact Information
 
-**Phone:** +7 926 660 0538
+**Phone:** +7 926 660 0538\n
 **E-mail:** x91.2008@gmail.com
 **Telegram:** @Rolbeth
 [Тескт ссылки 1](http://ya.ru "Описание 2")
