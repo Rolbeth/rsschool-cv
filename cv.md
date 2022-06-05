@@ -8,6 +8,7 @@
 **Phone:** +7 926 660 0538  
 **E-mail:** x91.2008@gmail.com  
 **Telegram:** @Rolbeth  
+**GitHub:** https://github.com/Rolbeth/rsschool-cv
 **Discord:** Evgeniy#7408  
 
 ***
