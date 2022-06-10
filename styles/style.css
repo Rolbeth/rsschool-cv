@@ -1,13 +1,47 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     margin: 0;
     padding: 0;
 }
 
-.main{
-border: 1px solid red;
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: ;
 
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+nav{
+    display: inline;
+    line-height: 2em;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section{
+    flex-flow: column;
+    min-width: 200px;
+    flex: auto;
+}
+
+/*  */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    
 }
