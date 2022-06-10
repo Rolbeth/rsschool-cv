@@ -28,32 +28,15 @@
 
     <main>
 
-        <section>
+        <section id="">
             <h2>About me </h2>
             <figure>
                 <img class="out-path" src="images/me.jpg" width="200" alt="me">
                 <figcaption>Evgeniy Shamin</figcaption>
             </figure>
-            <p>
-                Web-developer
-            </p>
 
         </section>
-
-        <section>
-            <h2>Contacts </h2>
-
-            <ul>
-                <li><a href="#">some</a></li>
-                <li><a href="#">some</a></li>
-                <li><a href="#">some</a></li>
-                <li><a href="#">some</a></li>
-                <li><a href="#">some</a></li>
-            </ul>
-
-        </section>
-
-        <section>
+        <section id="">
             <h2>About me</h2>
 
             <p>
@@ -62,8 +45,34 @@
             </p>
 
         </section>
+        <section id="">
+            <h2>Contacts </h2>
 
-        <section>
+            <ul>
+                <li>email: <a href="#">some</a></li>
+                <li>phone:  <a href="#">some</a></li>
+                <li>github: <a href="#">some</a></li>
+                <li>some: <a href="#">some</a></li>
+                <li>some: <a href="#">some</a></li>
+            </ul>
+            Phone: +7 926 660 0538
+            E-mail: x91.2008@gmail.com
+            Telegram: @Rolbeth
+            GitHub: https://github.com/Rolbeth/rsschool-cv
+            Discord: Evgeniy#7408
+        </section>
+
+        <section id="">
+            <h2>Work Expirience</h2>
+            <div>
+                <p>
+                    Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
+                    ссылками на исходный код.
+                </p>
+            </div>
+        </section>
+
+        <section id="">
             <h2>Skills</h2>
 
             <uL>
@@ -75,8 +84,8 @@
                         <li>Bitbucket</li>
                     </ul>
                 </li>
-                <li> VS Code</li>
-                <li>SQL
+                <li> VS Code, Notepad++, Sublime,...</li>
+                <li>Data Bases
                     <ul>
                         <li>MySql</li>
                         <li>Postgresql</li>
@@ -85,19 +94,20 @@
                     </ul>
                 </li>
 
-                <li>Php </li>
-                <li>Golang</li>
-                <li>Apache , Nginx, Caady </li>
-                <li>Limux , Debian, Ubuntu</li>
+                <li>C, C++, Php, Golang, Python, Bash </li>
+                <li>Apache, Nginx, Caady server </li>
+                <li>Linux, Debian, Ubuntu</li>
+                <li>VoIP Servers (Asterisk)</li>
+
             </uL>
 
         </section>
 
-        <section>
+        <section id="">
             <h2>Code</h2>
             <div>
-                <!-- <code> -->
-                <pre>
+
+                <pre><code>
 func indexpage(c *fiber.Ctx) error {
     if GetSesAuth(SesStore, c) {
         return c.Redirect("/login/")
@@ -112,38 +122,39 @@ func indexpage(c *fiber.Ctx) error {
         "menuid":   1,
     }, "layouts/main")
 }
+</code>
 </pre>
-                <!-- </code> -->
+
             </div>
         </section>
 
-        <section>
-            <h2>Work Expirience</h2>
+        <section id="">
+            <h2>Languages</h2>
             <div>
-                <p>
-                    Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
-                    ссылками на исходный код.
-                </p>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li> English - A1</li>
+                </ul>
+
+
             </div>
         </section>
 
-        <section>
+        <section id="">
             <h2>Education</h2>
-            <div>
-                <p>
-                    Образование (включая пройденные курсы и тренинги)
-                </p>
-            </div>
+            <ul>
+                <li>National Research University "Moscow Power Engineering Institute" , Nuclear power engineer</li>
+                <li>Courses
+                    <ul>
+                        <li>Tomsk State University , Web Developer</li>
+                        <li> Netology , Sql basic (Postgresql)</li>
+                        <li> Netology , Python</li>
+                        <li> Geekbrains , Git</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
-        <section>
-            <h2>English</h2>
-            <div>
-                <p>
-                    Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
-                </p>
-            </div>
-        </section>
 
     </main>
     <footer>
