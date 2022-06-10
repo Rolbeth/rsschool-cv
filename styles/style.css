@@ -1,7 +1,13 @@
+:root {
+    --main-background-image: cross-fade();
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgba(#fff,#fff,#fff,0.01);
 }
 
 html, body {
@@ -27,10 +33,6 @@ ul {
     padding-left: 20px;
 }
 
-/* ul:nth-child(1n){
-    padding-bottom: 15px;
-} */
-
 nav {
 
     flex: 1 0 auto;
@@ -47,8 +49,7 @@ nav a {
 
 nav a:hover {
     animation: link 0.4s linear;
-    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(1.2); */
+
 }
 
 main {
@@ -76,16 +77,26 @@ section {
     border-radius: 5px; */
 }
 
+figure{
+    filter: drop-shadow(5px 5px 15px rgb(73, 76, 77));
+   
+}
+
+.out-path{
+  
+    clip-path: circle(100px at 50% 50%);
+    overflow: hidden;
+    box-shadow: 2px 3px 5px 15px rgba(0,0,0,0.9);
+}
 
 @keyframes link {
     from {
         text-shadow: 1px 1px 5px black;
-
     }
 
-    to {
+    /* to {
         text-shadow: 1px 1px 5px rgb(248, 3, 3);
-    }
+    } */
 
 
 }
