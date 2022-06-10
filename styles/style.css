@@ -1,24 +1,54 @@
+
+/*
+#001219
+#005F73
+#0A9396
+#94D2BD
+#E9D8A6
+#EE9B00
+#CA6702
+#BB3E03
+#AE2012
+#9B2226
+
+*/
+
 :root {
     --main-background-image: cross-fade();
-
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgba(#fff,#fff,#fff,0.01);
 }
 
 html, body {
-
     height: 100%;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: rgb(0,18,25);
 }
 
 body {
     display: grid;
     grid-template-rows: 100px 1fr 100px;
     justify-content: center;
+
+    color: #94D2BD;
+    /* background: linear-gradient(-45deg, rgba(0,18,25,1) 0%, rgba(0,95,115,1) 16%, rgba(0,18,25,1) 100%); */
+    /* background: radial-gradient(circle, rgba(0,18,25,0.1) 0%, rgba(0,95,115,1) 16%, rgba(0,18,25,1) 83%); */
+
+    background: radial-gradient(ellipse farthest-side at left 100px ,rgb(0, 98, 117), transparent);
+}
+
+a{
+    color: #EE9B00;
+}
+
+h1,
+h2{
+    color:#E9D8A6;
 }
 
 header,
@@ -42,7 +72,7 @@ nav {
 }
 
 nav a {
-    color: rgb(129, 87, 243);
+    /* color: rgb(129, 87, 243); */
     text-decoration: none;
 
 }
