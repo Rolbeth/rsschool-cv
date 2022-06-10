@@ -49,32 +49,49 @@
 
         <section>
             <h2>About me</h2>
-            
-                <p>
-                    Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
-                    своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
-                </p>
-          
+
+            <p>
+                Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
+                своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+            </p>
+
         </section>
 
         <section>
             <h2>Skills</h2>
-            
-               <uL>
-                <li>some </li>
-                <li>some </li>
-                <li>some </li>
-                <li>some </li>
-                <li>some </li>
-               </uL>
-            
+
+            <uL>
+                <li>HTML5, CSS3 </li>
+                <li>JavaScript Basics</li>
+                <li>Git
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Bitbucket</li>
+                    </ul>
+                </li>
+                <li> VS Code</li>
+                <li>SQL
+                    <ul>
+                        <li>MySql</li>
+                        <li>Postgresql</li>
+                        <li>Sqlite</li>
+                        <li>Redis</li>
+                    </ul>
+                </li>
+
+                <li>Php </li>
+                <li>Golang</li>
+                <li>Apache , Nginx, Caady </li>
+                <li>Limux , Debian, Ubuntu</li>
+            </uL>
+
         </section>
 
         <section>
             <h2>Code</h2>
             <div>
                 <!-- <code> -->
- <pre>
+                <pre>
 func indexpage(c *fiber.Ctx) error {
     if GetSesAuth(SesStore, c) {
         return c.Redirect("/login/")
