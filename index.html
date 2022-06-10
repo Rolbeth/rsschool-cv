@@ -26,51 +26,76 @@
         <section>
             <h2>About me </h2>
             <figure>
-                <img src="images/me.jpg" width="200" alt="me">
+                <img src="images/me.jpg" width="150" alt="me">
                 <figcaption>Evgeniy Shamin</figcaption>
             </figure>
             <p>
-                Имя и фамилия
+                Web-developer
             </p>
 
         </section>
         <section>
             <h2>Contacts </h2>
-            <p>
-                Контакты для связи
-            </p>
+
+            <ul>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+                <li><a href="#">some</a></li>
+            </ul>
 
         </section>
+
         <section>
-            <h2>Коротко о себе</h2>
-            <div>
+            <h2>About me</h2>
+            
                 <p>
                     Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
                     своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
                 </p>
-            </div>
+          
         </section>
+
         <section>
-            <h2>Навыки</h2>
+            <h2>Skills</h2>
+            
+               <uL>
+                <li>some </li>
+                <li>some </li>
+                <li>some </li>
+                <li>some </li>
+                <li>some </li>
+               </uL>
+            
+        </section>
+
+        <section>
+            <h2>Code</h2>
             <div>
-                <p>
-                    Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты
-                    разработки, которыми вы владеете)
-                </p>
+                <!-- <code> -->
+ <pre>
+func indexpage(c *fiber.Ctx) error {
+    if GetSesAuth(SesStore, c) {
+        return c.Redirect("/login/")
+    }
+
+    sess, _ := SesStore.Get(c)
+
+    // Render index within layouts/main
+    return c.Render("index", fiber.Map{
+        "Title":    "Main Page",
+        "UserName": sess.Get("Name"),
+        "menuid":   1,
+    }, "layouts/main")
+}
+</pre>
+                <!-- </code> -->
             </div>
         </section>
+
         <section>
-            <h2>Пример кода</h2>
-            <div>
-                <code>
-                    <pre>
-                    Примеры кода
-                   </pre>
-                </code>
-            </div>
-        </section>
-        <section>
-            <h2>Опыт работы</h2>
+            <h2>Work Expirience</h2>
             <div>
                 <p>
                     Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
@@ -78,8 +103,9 @@
                 </p>
             </div>
         </section>
+
         <section>
-            <h2>Образование</h2>
+            <h2>Education</h2>
             <div>
                 <p>
                     Образование (включая пройденные курсы и тренинги)
