@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    <p>just test</p>
+
+    <header>
+        <div>
+            <h2>About me </h2>
+            <figure>
+                <img class="out-path" src="./images/me.jpg" width="200" alt="me">
+               
+            </figure>
+
+        </div>
+
+        <div>
+            <h1>Evgeniy Shamin</h1>
+            <span>Web developer</span>
+        </div>
+
+        <nav>
+            <a href="/#about">About</a>
+            <a href="/#contacts">Contacts</a>
+            <a href="/#skills">Skills</a>
+            <a href="/#expirience">Expirience</a>
+            <a href="/#code">Code</a>
+            <a href="/#languages"></a>
+            <a href="/#edu">Education</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+
+        </aside>
+        
+        <section id="about">
+            <header>
+                <h2>About me</h2>
+            </header>
+            <p>
+                Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
+                своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+            </p>
+
+        </section>
+        <section id="contacts">
+            <header>
+                <h2>Contacts </h2>
+            </header>
+
+            <ul>
+                <li>E-mail: <a href="mailto:x91.2008@gmail.com">x91.2008@gmail.com</a></li>
+                <li>Phone: <a href="#">+7 926 660 0538</a></li>
+                <li>GitHub: <a href="https://github.com/Rolbeth/rsschool-cv">Click here</a></li>
+                <li>Telegram: <a href="#">@Rolbeth</a></li>
+                <li>Discord: <a href="#">Evgeniy#7408</a></li>
+            </ul>
+        </section>
+
+        <section id="expirience">
+            <header>
+                <h2>Work Expirience</h2>
+            </header>
+
+            <div>
+                <p>
+                    Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
+                    ссылками на исходный код.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <header>
+                <h2>Skills</h2>
+            </header>
+            <uL>
+                <li>HTML5, CSS3 </li>
+                <li>JavaScript Basics</li>
+                <li>Git
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Bitbucket</li>
+                    </ul>
+                </li>
+                <li> VS Code, Notepad++, Sublime,...</li>
+                <li>Data Bases
+                    <ul>
+                        <li>MySql</li>
+                        <li>Postgresql</li>
+                        <li>Sqlite</li>
+                        <li>Redis</li>
+                    </ul>
+                </li>
+
+                <li>C, C++, Php, Golang, Python, Bash </li>
+                <li>Apache, Nginx, Caady server </li>
+                <li>Linux, Debian, Ubuntu</li>
+                <li>VoIP Servers (Asterisk)</li>
+
+            </uL>
+
+        </section>
+
+        <section id="code">
+            <header>
+                <h2>Code</h2>
+            </header>
+            <div>
+
+                <pre><code>
+func indexpage(c *fiber.Ctx) error {
+    if GetSesAuth(SesStore, c) {
+        return c.Redirect("/login/")
+    }
+
+    sess, _ := SesStore.Get(c)
+
+    // Render index within layouts/main
+    return c.Render("index", fiber.Map{
+        "Title":    "Main Page",
+        "UserName": sess.Get("Name"),
+        "menuid":   1,
+    }, "layouts/main")
+}
+</code>
+</pre>
+
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <div>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li> English - A1</li>
+                </ul>
+
+
+            </div>
+        </section>
+
+        <section id="edu">
+            <header>
+                <h2>Education</h2>
+            </header>
+            <ul>
+                <li>National Research University "Moscow Power Engineering Institute" , Nuclear power engineer</li>
+                <li>Courses
+                    <ul>
+                        <li>Tomsk State University , Web Developer</li>
+                        <li> Netology , Sql basic (Postgresql)</li>
+                        <li> Netology , Python</li>
+                        <li> Geekbrains , Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://rs.school/js/" title>Курс «JavaScript/Front-end»</a>
+        <img class="logo" alt="logo" width="100" src="https://rs.school/images/rs_school_js.svg">
+    </footer>
+
 </body>
+
 </html>
