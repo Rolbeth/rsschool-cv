@@ -6,64 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
     <header>
         <div>
+            <h2>About me </h2>
+            <figure>
+                <img class="out-path" src="./images/me.jpg" width="200" alt="me">
+               
+            </figure>
+
+        </div>
+
+        <div>
             <h1>Evgeniy Shamin</h1>
             <span>Web developer</span>
         </div>
+
         <nav>
-            <a href="#">link</a>
-            <a href="#">link</a>
-            <a href="#">link</a>
-            <a href="#">link</a>
-            <a href="#">link</a>
-            <a href="#">link</a>
+            <a href="/#about">About</a>
+            <a href="/#contacts">Contacts</a>
+            <a href="/#skills">Skills</a>
+            <a href="/#expirience">Expirience</a>
+            <a href="/#code">Code</a>
+            <a href="/#languages"></a>
+            <a href="/#edu">Education</a>
         </nav>
     </header>
 
     <main>
+        <aside>
 
-        <section id="">
-            <h2>About me </h2>
-            <figure>
-                <img class="out-path" src="images/me.jpg" width="200" alt="me">
-                <figcaption>Evgeniy Shamin</figcaption>
-            </figure>
-
-        </section>
-        <section id="">
-            <h2>About me</h2>
-
+        </aside>
+        
+        <section id="about">
+            <header>
+                <h2>About me</h2>
+            </header>
             <p>
                 Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
                 своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
             </p>
 
         </section>
-        <section id="">
-            <h2>Contacts </h2>
+        <section id="contacts">
+            <header>
+                <h2>Contacts </h2>
+            </header>
 
             <ul>
-                <li>email: <a href="#">some</a></li>
-                <li>phone:  <a href="#">some</a></li>
-                <li>github: <a href="#">some</a></li>
-                <li>some: <a href="#">some</a></li>
-                <li>some: <a href="#">some</a></li>
+                <li>E-mail: <a href="mailto:x91.2008@gmail.com">x91.2008@gmail.com</a></li>
+                <li>Phone: <a href="#">+7 926 660 0538</a></li>
+                <li>GitHub: <a href="https://github.com/Rolbeth/rsschool-cv">Click here</a></li>
+                <li>Telegram: <a href="#">@Rolbeth</a></li>
+                <li>Discord: <a href="#">Evgeniy#7408</a></li>
             </ul>
-            Phone: +7 926 660 0538
-            E-mail: x91.2008@gmail.com
-            Telegram: @Rolbeth
-            GitHub: https://github.com/Rolbeth/rsschool-cv
-            Discord: Evgeniy#7408
         </section>
 
-        <section id="">
-            <h2>Work Expirience</h2>
+        <section id="expirience">
+            <header>
+                <h2>Work Expirience</h2>
+            </header>
+
             <div>
                 <p>
                     Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
@@ -72,9 +79,10 @@
             </div>
         </section>
 
-        <section id="">
-            <h2>Skills</h2>
-
+        <section id="skills">
+            <header>
+                <h2>Skills</h2>
+            </header>
             <uL>
                 <li>HTML5, CSS3 </li>
                 <li>JavaScript Basics</li>
@@ -103,8 +111,10 @@
 
         </section>
 
-        <section id="">
-            <h2>Code</h2>
+        <section id="code">
+            <header>
+                <h2>Code</h2>
+            </header>
             <div>
 
                 <pre><code>
@@ -128,7 +138,7 @@ func indexpage(c *fiber.Ctx) error {
             </div>
         </section>
 
-        <section id="">
+        <section id="languages">
             <h2>Languages</h2>
             <div>
                 <ul>
@@ -140,8 +150,10 @@ func indexpage(c *fiber.Ctx) error {
             </div>
         </section>
 
-        <section id="">
-            <h2>Education</h2>
+        <section id="edu">
+            <header>
+                <h2>Education</h2>
+            </header>
             <ul>
                 <li>National Research University "Moscow Power Engineering Institute" , Nuclear power engineer</li>
                 <li>Courses
@@ -154,7 +166,6 @@ func indexpage(c *fiber.Ctx) error {
                 </li>
             </ul>
         </section>
-
 
     </main>
     <footer>

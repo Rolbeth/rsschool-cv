@@ -11,6 +11,9 @@
 #9B2226
 
 */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --main-background-image: cross-fade();
@@ -25,13 +28,15 @@
 html, body {
     height: 100%;
    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    
     background: rgb(0, 18, 25);
 }
 
 body {
     display: grid;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 200px 1fr 100px;
     grid-template-columns: auto;
     gap: 20px;
     grid-auto-columns: minmax(500px, 1400px);
