@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h2>About me </h2>
+            <figure>
+                <img class="out-path" src="./images/me.jpg" alt="me" width="200" height="230">
+            </figure>
+
+        </div>
+
+        <div>
+            <h1>Evgeniy Shamin</h1>
+            <span>Web developer</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#expirience">Expirience</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#edu">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+
+        </aside>
+
+        <section id="about">
+            <header>
+                <h2>About me</h2>
+            </header>
+            <p>
+                I want to synchronize my skills with those offered by modernity, learn something new and gain additional
+                experience.
+            </p>
+
+        </section>
+        <section id="contacts">
+            <header>
+                <h2>Contacts </h2>
+            </header>
+
+            <ul>
+                <li>E-mail: <a href="mailto:x91.2008@gmail.com">x91.2008@gmail.com</a></li>
+                <li>Phone: <a href="tel:+7 926 660 0538">+7 926 660 0538</a></li>
+                <li>GitHub: <a href="https://github.com/Rolbeth/rsschool-cv">Click here</a></li>
+                <li>Telegram: <a href="https://t.me/Rolbeth">@Rolbeth</a></li>
+                <li>Discord: <a href="#">Evgeniy#7408</a></li>
+            </ul>
+        </section>
+
+        <section id="expirience">
+            <header>
+                <h2>Work Expirience</h2>
+            </header>
+
+            <div>
+                <p>
+                    For the last few years I have been creating and maintaining websites on popular CMS as an
+                    independent developer.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <header>
+                <h2>Skills</h2>
+            </header>
+            <ul>
+                <li>HTML5, CSS3 </li>
+                <li>JavaScript Basics</li>
+                <li>Git
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Bitbucket</li>
+                    </ul>
+                </li>
+                <li> VS Code, Sublime</li>
+                <li>Data Bases
+                    <ul>
+                        <li>MySql</li>
+                        <li>Postgresql</li>
+                        <li>Sqlite</li>
+                        <li>Redis</li>
+                    </ul>
+                </li>
+
+                <li>C, C++, Php, Golang, Python, Bash </li>
+                <li>Apache, Nginx, Caady server </li>
+                <li>Linux, Debian, Ubuntu</li>
+                <li>VoIP Servers (Asterisk)</li>
+
+            </ul>
+
+        </section>
+
+        <section id="code">
+            <header>
+                <h2>Code</h2>
+            </header>
+            <div>
+
+                <pre><code>
+func indexpage(c *fiber.Ctx) error {
+    if GetSesAuth(SesStore, c) {
+        return c.Redirect("/login/")
+    }
+
+    sess, _ := SesStore.Get(c)
+
+    // Render index within layouts/main
+    return c.Render("index", fiber.Map{
+        "Title":    "Main Page",
+        "UserName": sess.Get("Name"),
+        "menuid":   1,
+    }, "layouts/main")
+}
+</code>
+</pre>
+            </div>
+        </section>
+
+        <section id="languages">
+            <header>
+                <h2>Languages</h2>
+            </header>
+            <div>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - A1</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="edu">
+            <header>
+                <h2>Education</h2>
+            </header>
+            <ul>
+                <li>National Research University "Moscow Power Engineering Institute" , Nuclear power engineer</li>
+                <li>Refresher course:
+                    <ul>
+                        <li> Tomsk State University , Web Developer</li>
+                        <li> Netology , Sql basic (Postgresql)</li>
+                        <li> Netology , Python</li>
+                        <li> Geekbrains , Git</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://rs.school/js/" title="Курс «JavaScript/Front-end»">Курс «JavaScript/Front-end»</a>
+
+        <img src="https://rs.school/images/rs_school_js.svg" class="logo" alt="logo" width="100">
+    </footer>
+
+</body>
+
+</html>
