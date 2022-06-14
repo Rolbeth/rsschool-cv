@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
 </head>
 
 <body>
@@ -15,8 +17,7 @@
         <div>
             <h2>About me </h2>
             <figure>
-                <img class="out-path" src="./images/me.jpg" width="200" alt="me">
-               
+                <img class="out-path" src="./images/me.jpg" alt="me" width="200" height="230">
             </figure>
 
         </div>
@@ -27,13 +28,15 @@
         </div>
 
         <nav>
-            <a href="/#about">About</a>
-            <a href="/#contacts">Contacts</a>
-            <a href="/#skills">Skills</a>
-            <a href="/#expirience">Expirience</a>
-            <a href="/#code">Code</a>
-            <a href="/#languages"></a>
-            <a href="/#edu">Education</a>
+            <ul>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contacts">Contacts</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#expirience">Expirience</a></li>
+                <li><a href="/#code">Code</a></li>
+                <li><a href="/#languages">Languages</a></li>
+                <li><a href="/#edu">Education</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -41,14 +44,14 @@
         <aside>
 
         </aside>
-        
+
         <section id="about">
             <header>
                 <h2>About me</h2>
             </header>
             <p>
-                Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о
-                своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+                I want to synchronize my skills with those offered by modernity, learn something new and gain additional
+                experience.
             </p>
 
         </section>
@@ -59,9 +62,9 @@
 
             <ul>
                 <li>E-mail: <a href="mailto:x91.2008@gmail.com">x91.2008@gmail.com</a></li>
-                <li>Phone: <a href="#">+7 926 660 0538</a></li>
+                <li>Phone: <a href="tel:+7 926 660 0538">+7 926 660 0538</a></li>
                 <li>GitHub: <a href="https://github.com/Rolbeth/rsschool-cv">Click here</a></li>
-                <li>Telegram: <a href="#">@Rolbeth</a></li>
+                <li>Telegram: <a href="https://t.me/Rolbeth">@Rolbeth</a></li>
                 <li>Discord: <a href="#">Evgeniy#7408</a></li>
             </ul>
         </section>
@@ -73,8 +76,8 @@
 
             <div>
                 <p>
-                    Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и
-                    ссылками на исходный код.
+                    For the last few years I have been creating and maintaining websites on popular CMS as an
+                    independent developer.
                 </p>
             </div>
         </section>
@@ -83,7 +86,7 @@
             <header>
                 <h2>Skills</h2>
             </header>
-            <uL>
+            <ul>
                 <li>HTML5, CSS3 </li>
                 <li>JavaScript Basics</li>
                 <li>Git
@@ -92,7 +95,7 @@
                         <li>Bitbucket</li>
                     </ul>
                 </li>
-                <li> VS Code, Notepad++, Sublime,...</li>
+                <li> VS Code, Sublime</li>
                 <li>Data Bases
                     <ul>
                         <li>MySql</li>
@@ -107,7 +110,7 @@
                 <li>Linux, Debian, Ubuntu</li>
                 <li>VoIP Servers (Asterisk)</li>
 
-            </uL>
+            </ul>
 
         </section>
 
@@ -134,19 +137,18 @@ func indexpage(c *fiber.Ctx) error {
 }
 </code>
 </pre>
-
             </div>
         </section>
 
         <section id="languages">
-            <h2>Languages</h2>
+            <header>
+                <h2>Languages</h2>
+            </header>
             <div>
                 <ul>
                     <li>Russian - Native</li>
-                    <li> English - A1</li>
+                    <li>English - A1</li>
                 </ul>
-
-
             </div>
         </section>
 
@@ -156,9 +158,9 @@ func indexpage(c *fiber.Ctx) error {
             </header>
             <ul>
                 <li>National Research University "Moscow Power Engineering Institute" , Nuclear power engineer</li>
-                <li>Courses
+                <li>Refresher course:
                     <ul>
-                        <li>Tomsk State University , Web Developer</li>
+                        <li> Tomsk State University , Web Developer</li>
                         <li> Netology , Sql basic (Postgresql)</li>
                         <li> Netology , Python</li>
                         <li> Geekbrains , Git</li>
@@ -169,8 +171,9 @@ func indexpage(c *fiber.Ctx) error {
 
     </main>
     <footer>
-        <a href="https://rs.school/js/" title>Курс «JavaScript/Front-end»</a>
-        <img class="logo" alt="logo" width="100" src="https://rs.school/images/rs_school_js.svg">
+        <a href="https://rs.school/js/" title="Курс «JavaScript/Front-end»">Курс «JavaScript/Front-end»</a>
+
+        <img src="https://rs.school/images/rs_school_js.svg" class="logo" alt="logo" width="100">
     </footer>
 
 </body>
