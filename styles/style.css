@@ -56,7 +56,7 @@ main {
         "left right"
     ;
 
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 2fr 6fr;
     gap: 20px;
 
     justify-content: space-around;
